@@ -1,0 +1,35 @@
+﻿@model MVCApp.Models.Employee
+ 
+@{
+}
+<div class="row">
+    <div class="col-6 offset-3">
+        <form asp-action="Create"asp-controller="Employee"
+              method="post">
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" /> 
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mobile"></label>
+                <input asp-for="Mobile" class="form-control" />
+                <span asp-validation-for="Mobile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div> 
+            <div class="form-group">
+                <button type="submit"class="btn btn-success">submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
